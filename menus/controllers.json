@@ -1,0 +1,106 @@
+{
+	"menu_id": "vrplus_menu_controllers",
+	"parent_menu_id": "vrplus_menu_main",
+	"title": "vrplus_menu_controllers",
+	"priority": 99,
+	"description": "vrplus_menu_controllers_desc",
+	"items": [
+		{
+			"type": "toggle",
+			"id": "vrplus_movement_locomotion",
+			"title": "vrplus_movement_locomotion",
+			"description": "vrplus_movement_locomotion_desc",
+			"callback": "vrplus_movement_locomotion",
+			"value": "movement_locomotion",
+			"priority": 100
+		},
+		{
+			"type": "multiple_choice",
+			"id": "vrplus_turning_mode",
+			"title": "vrplus_turning_mode",
+			"description": "vrplus_turning_mode_desc",
+			"callback": "vrplus_turning_mode",
+			"value": "turning_mode",
+			"items": [
+				"vrplus_turning_mode_off",
+				"vrplus_turning_mode_smooth",
+				"vrplus_turning_mode_snap"
+			],
+			"priority": 99
+		},
+		{
+			"type": "multiple_choice",
+			"id": "vrplus_sprint_mode",
+			"title": "vrplus_sprint_mode",
+			"description": "vrplus_sprint_mode_desc",
+			"callback": "vrplus_sprint_mode",
+			"value": "sprint_mode",
+			"items": [
+				"vrplus_sprint_mode_off",
+				"vrplus_sprint_mode_sticky",
+				"vrplus_sprint_mode_hold",
+				"vrplus_sprint_mode_hold_outer"
+			],
+			"priority": 98
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_movement_controller_direction",
+			"title": "vrplus_movement_controller_direction",
+			"description": "vrplus_movement_controller_direction_desc",
+			"callback": "vrplus_movement_controller_direction",
+			"value": "movement_controller_direction",
+			"priority": 97
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_deadzone",
+			"title": "vrplus_deadzone",
+			"description": "vrplus_deadzone_desc",
+			"callback": "vrplus_deadzone",
+			"value": "deadzone",
+			"max": 100,
+			"min": 0,
+			"step": 1,
+			"priority": 96
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_movement_smoothing",
+			"title": "vrplus_movement_smoothing",
+			"description": "vrplus_movement_smoothing_desc",
+			"callback": "vrplus_movement_smoothing",
+			"value": "movement_smoothing",
+			"priority": 95
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_sprint_time",
+			"title": "vrplus_sprint_time",
+			"description": "vrplus_sprint_time_desc",
+			"callback": "vrplus_sprint_time",
+			"value": "sprint_time",
+			"max": 1,
+			"min": 0,
+			"step": 0.05,
+			"priority": 94
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_teleport_on_release",
+			"title": "vrplus_teleport_on_release",
+			"description": "vrplus_teleport_on_release_desc",
+			"callback": "vrplus_teleport_on_release",
+			"value": "teleport_on_release",
+			"priority": 93
+		},
+		{
+			"type": "button",
+			"id": "vrplus_controls_manager",
+			"title": "vrplus_controls_manager",
+			"description": "vrplus_controls_manager_desc",
+			"callback": "vrplus_controls_manager",
+			"priority": 92
+		}
+	]
+}

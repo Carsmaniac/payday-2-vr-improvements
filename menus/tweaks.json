@@ -1,0 +1,76 @@
+{
+	"menu_id": "vrplus_menu_tweaks",
+	"parent_menu_id": "vrplus_menu_main",
+	"title": "vrplus_menu_tweaks",
+	"description": "vrplus_menu_tweaks_desc",
+	"items": [
+		{
+			"type": "slider",
+			"id": "vrplus_laser_hue",
+			"title": "vrplus_laser_hue",
+			"description": "vrplus_laser_hue_desc",
+			"callback": "vrplus_laser_hue",
+			"value": "laser_hue",
+			"max": 1,
+			"min": 0,
+			"step": 0.1,
+			"priority": 99
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_laser_disco",
+			"title": "vrplus_laser_disco",
+			"description": "vrplus_laser_disco_desc",
+			"callback": "vrplus_laser_disco",
+			"value": "laser_disco",
+			"priority": 98
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_endscreen_speedup",
+			"title": "vrplus_endscreen_speedup",
+			"description": "vrplus_endscreen_speedup_desc",
+			"callback": "vrplus_endscreen_speedup",
+			"value": "endscreen_speedup",
+			"max": 5,
+			"min": 1,
+			"step": 1,
+			"priority": 97
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_force_quality_enable",
+			"title": "vrplus_force_quality_enable",
+			"description": "vrplus_force_quality_enable_desc",
+			"callback": "vrplus_force_quality_enable",
+			"value": "force_quality_enable",
+			"priority": 96
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_force_quality",
+			"title": "vrplus_force_quality",
+			"description": "vrplus_force_quality_desc",
+			"callback": "vrplus_force_quality",
+			"value": "force_quality",
+			"max": 7,
+			"min": 1,
+			"step": 1,
+			"priority": 95
+		},
+		{
+			"type": "multiple_choice",
+			"id": "vrplus_weapon_melee",
+			"title": "vrplus_weapon_melee",
+			"description": "vrplus_weapon_melee_desc",
+			"callback": "vrplus_weapon_melee",
+			"value": "weapon_melee",
+			"items": [
+				"vrplus_weapon_melee_enabled",
+				"vrplus_weapon_melee_loud",
+				"vrplus_weapon_melee_disabled"
+			],
+			"priority": 94
+		}
+	]
+}

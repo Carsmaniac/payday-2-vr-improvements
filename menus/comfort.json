@@ -1,0 +1,79 @@
+{
+	"menu_id": "vrplus_menu_comfort",
+	"parent_menu_id": "vrplus_menu_main",
+	"title": "vrplus_menu_comfort",
+	"priority": 97,
+	"description": "vrplus_menu_comfort_desc",
+	"items": [
+		{
+			"type": "toggle",
+			"id": "vrplus_max_movement_speed_enable",
+			"title": "vrplus_max_movement_speed_enable",
+			"description": "vrplus_max_movement_speed_enable_desc",
+			"callback": "vrplus_max_movement_speed_enable",
+			"value": "max_movement_speed_enable",
+			"priority": 99
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_max_movement_speed",
+			"title": "vrplus_max_movement_speed",
+			"description": "vrplus_max_movement_speed_desc",
+			"callback": "vrplus_max_movement_speed",
+			"value": "max_movement_speed",
+			"max": 600,
+			"min": 0,
+			"step": 10,
+			"priority": 98
+		},
+		{
+			"type": "multiple_choice",
+			"id": "vrplus_interact_mode",
+			"title": "vrplus_interact_mode",
+			"description": "vrplus_interact_mode_desc",
+			"callback": "vrplus_interact_mode",
+			"value": "interact_mode",
+			"items": [
+				"vrplus_interact_mode_grip",
+				"vrplus_interact_mode_both",
+				"vrplus_interact_mode_trigger"
+			],
+			"priority": 97
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_interact_lock",
+			"title": "vrplus_interact_lock",
+			"description": "vrplus_interact_lock_desc",
+			"callback": "vrplus_interact_lock",
+			"value": "interact_lock",
+			"priority": 96
+		},
+		{
+			"type": "multiple_choice",
+			"id": "vrplus_crouching",
+			"title": "vrplus_crouching",
+			"description": "vrplus_crouching_desc",
+			"callback": "vrplus_crouching",
+			"value": "crouching",
+			"items": [
+				"vrplus_crouching_mode_none",
+				"vrplus_crouching_mode_toggle",
+				"vrplus_crouching_mode_hold"
+			],
+			"priority": 95
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_crouch_scale",
+			"title": "vrplus_crouch_scale",
+			"description": "vrplus_crouch_scale_desc",
+			"callback": "vrplus_crouch_scale",
+			"value": "crouch_scale",
+			"max": 100,
+			"min": 20,
+			"step": 10,
+			"priority": 94
+		}
+	]
+}

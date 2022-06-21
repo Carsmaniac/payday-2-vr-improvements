@@ -1,0 +1,79 @@
+{
+	"menu_id": "vrplus_menu_camera",
+	"parent_menu_id": "vrplus_menu_main",
+	"title": "vrplus_menu_camera",
+	"priority": 98,
+	"description": "vrplus_menu_camera_desc",
+	"items": [
+		{
+			"type": "slider",
+			"id": "vrplus_cam_fade_distance",
+			"title": "vrplus_cam_fade_distance",
+			"description": "vrplus_cam_fade_distance_desc",
+			"callback": "vrplus_cam_fade_distance",
+			"value": "cam_fade_distance",
+			"max": 13,
+			"min": 1,
+			"step": 1,
+			"priority": 99
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_cam_reset_percent",
+			"title": "vrplus_cam_reset_percent",
+			"description": "vrplus_cam_reset_percent_desc",
+			"callback": "vrplus_cam_reset_percent",
+			"value": "cam_reset_percent",
+			"max": 100,
+			"min": 0,
+			"step": 1,
+			"priority": 98
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_cam_reset_timer",
+			"title": "vrplus_cam_reset_timer",
+			"description": "vrplus_cam_reset_timer_desc",
+			"callback": "vrplus_cam_reset_timer",
+			"value": "cam_reset_timer",
+			"max": 5,
+			"min": 0,
+			"step": 0.1,
+			"priority": 97
+		},
+
+		{
+			"type": "toggle",
+			"id": "vrplus_cam_redout_enable",
+			"title": "vrplus_cam_redout_enable",
+			"description": "vrplus_cam_redout_enable_desc",
+			"callback": "vrplus_cam_redout_enable",
+			"value": "cam_redout_enable",
+			"priority": 96
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_cam_redout_hp_start",
+			"title": "vrplus_cam_redout_hp_start",
+			"description": "vrplus_cam_redout_hp_start_desc",
+			"callback": "vrplus_cam_redout_hp_start",
+			"value": "cam_redout_hp_start",
+			"max": 100,
+			"min": 1,
+			"step": 1,
+			"priority": 95
+		},
+		{
+			"type": "slider",
+			"id": "vrplus_cam_redout_fade_max",
+			"title": "vrplus_cam_redout_fade_max",
+			"description": "vrplus_cam_redout_fade_max_desc",
+			"callback": "vrplus_cam_redout_fade_max",
+			"value": "cam_redout_fade_max",
+			"max": 100,
+			"min": 1,
+			"step": 1,
+			"priority": 94
+		}
+	]
+}

@@ -1,0 +1,114 @@
+{
+	"name": "VR Enhancements",
+	"description": "Bunch of tweaks for the VR Beta.",
+	"author": "ZNix",
+	"contact": "znix@znix.xyz",
+	"version": "0.6.1",
+	"image" : "vrplus.png",
+	"color" : "255 255 255",
+	"blt_version": 2,
+	"pre_hooks" : [
+		{
+			"hook_id" : "lib/entry",
+			"script_path" : "menus/main.lua"
+		},
+		{
+			"hook_id" : "lib/entry",
+			"script_path" : "menus/updates.lua"
+		}
+	],
+	"hooks": [
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/playerstandardvr",
+			"script_path" : "playerstandardvr.lua"
+		},
+		{
+			"hook_id" : "lib/units/cameras/fpcameraplayerbase",
+			"script_path" : "fpcameraplayerbase.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/playermaskoffvr",
+			"script_path" : "playermaskoffvr.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/hand/playerhandstateweapon",
+			"script_path" : "playerhandstateweapon.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/hand/playerhandstateakimbo",
+			"script_path" : "playerhandstateakimbo.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/hand/playerhandstateitem",
+			"script_path" : "playerhandstateitem.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menumanagervr",
+			"script_path" : "menumanagervr.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hudmanagervr",
+			"script_path" : "hud/hudmanagervr.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hud/vr/hudteammatevr",
+			"script_path" : "hud/hudteammatevr.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hud/vr/hudplayerdownedvr",
+			"script_path" : "hud/hudplayerdownedvr.lua"
+		},
+		{
+			"hook_id" : "lib/input/handstatesplayer",
+			"script_path" : "handstatesplayer.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/states/vr/playermenu",
+			"script_path" : "playermenu.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/playerhand",
+			"script_path" : "playerhand.lua"
+		},
+		{
+			"hook_id" : "lib/units/props/ladder",
+			"script_path" : "ladder.lua"
+		},
+		{
+			"hook_id" : "lib/managers/hudmanagervr",
+			"script_path" : "hudmanagervr.lua"
+		},
+		{
+			"hook_id" : "lib/units/beings/player/playermovement",
+			"script_path" : "playermovement.lua"
+		},
+		{
+			"hook_id" : "lib/managers/vrmanagerpd2",
+			"script_path" : "vrmanagerpd2.lua"
+		},
+		{
+			"hook_id": "lib/units/beings/player/handmelee",
+			"script_path": "handmelee.lua"
+		},
+		{
+			"hook_id": "lib/managers/hud/vr/hudbelt",
+			"script_path": "hud/hudbelt.lua"
+		},
+		{
+			"hook_id": "lib/units/beings/player/states/vr/hand/playerhandstatebelt",
+			"script_path": "hud/playerhandstatebelt.lua"
+		},
+		{
+			"hook_id": "lib/units/beings/player/states/vr/hand/playerhandstateitem",
+			"script_path": "hud/playerhandstateitem.lua"
+		},
+		{
+			"hook_id": "lib/managers/menu/vrcustomizationgui",
+			"script_path": "hud/vrcustomizationgui.lua"
+		},
+		{
+			"hook_id" : "lib/managers/menu/menucomponentmanager",
+			"script_path" : "menus/controls/ControlsManager.lua"
+		}
+	]
+}

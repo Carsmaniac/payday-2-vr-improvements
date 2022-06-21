@@ -1,0 +1,27 @@
+{
+	"menu_id": "vrplus_menu_hud",
+	"parent_menu_id": "vrplus_menu_main",
+	"title": "vrplus_menu_hud",
+	"priority": 96,
+	"description": "vrplus_menu_hud_desc",
+	"items": [
+		{
+			"type": "toggle",
+			"id": "vrplus_watch_health_wheel",
+			"title": "vrplus_watch_health_wheel",
+			"description": "vrplus_watch_health_wheel_desc",
+			"callback": "vrplus_watch_health_wheel",
+			"value": "watch_health_wheel",
+			"priority": 99
+		},
+		{
+			"type": "toggle",
+			"id": "vrplus_belt_radio",
+			"title": "vrplus_belt_radio",
+			"description": "vrplus_belt_radio_desc",
+			"callback": "vrplus_belt_radio",
+			"value": "belt_radio",
+			"priority": 98
+		}
+	]
+}
